@@ -1,5 +1,6 @@
 #include <iomanip>
 #include <iostream>
+#include <map>
 
 #include <vector>
 
@@ -24,7 +25,7 @@ static void BuildGameObjects(std::vector<GameObject*>& game_objects, const int n
 		auto* gameObject = new GameObject(id, point);
 		game_objects.push_back(gameObject);
 	}
-	
+
 }
 
 static void CompareGameObjects(GameObject* object1, GameObject* object2)
@@ -51,7 +52,18 @@ static void CompareGameObjects(GameObject* object1, GameObject* object2)
 
 int main()
 {
-	std::vector<GameObject*> gameObjects;
+	// map is made up of key-value pairs - in this case the key is a string
+	// and the value is a GameObject
+	std::map<std::string, GameObject> gameObjects;
+
+
+
+
+
+
+
+
+	/*std::vector<GameObject*> gameObjects;
 
 	int num_of_GO;
 	std::cout << "How Many Game Objects do you need?: ";
@@ -59,8 +71,8 @@ int main()
 	std::cout << "\n--------------------------------------------------------------" << std::endl;
 
 	BuildGameObjects(gameObjects, num_of_GO);
-	
-	
+
+
 	int index1;
 	std::cout << "What is the First Object index?: ";
 	std::cin >> index1;
@@ -69,8 +81,8 @@ int main()
 	std::cout << "What is the Second Object index?: ";
 	std::cin >> index2;
 	std::cout << "\n--------------------------------------------------------------" << std::endl;
-	
+
 	CompareGameObjects(gameObjects[index1], gameObjects[index2]);
-	CompareGameObjects(gameObjects[index1], gameObjects[index2]);
+	CompareGameObjects(gameObjects[index1], gameObjects[index2]);*/
 }
 
